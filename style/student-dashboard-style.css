@@ -1,0 +1,177 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    display: flex;
+}
+
+.left-sidenav {
+    height: 100vh;
+    width: 15%;
+    background-color: black;
+    overflow-x: hidden;
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;
+}
+
+.left-sidenav a {
+    text-decoration: none;
+}
+
+.center-left-sidenav {
+    display: flex;
+    flex-direction: column;
+}
+
+.header, .main {
+    width: 100%;
+    /* height: 25vh; */
+}
+
+.header {
+    display: flex;
+    height: 30vh;
+}
+
+.header-profile-tile,
+.header-total-time,
+.header-current-course-progress,
+.header-total-course-progress {
+    /* height: 150px; */
+    width: 50%;
+    transition: width .5s;
+}
+
+.header-profile-tile {
+    background-color: aqua;
+    flex-grow: 1;
+    flex-shrink: 1;
+}
+
+.header-profile-tile p {
+    text-align: right;
+    position: relative;
+    top: 20px;
+    margin-right: 20px;
+}
+
+.header-profile-tile h3  {
+    position: relative;
+    bottom: 90px;
+    left: 40px;
+
+    font-size: 1.5em;
+    color: white;
+}
+
+.header-profile-tile img {
+    position: relative;
+    bottom: 8px;
+    width: 250px
+}
+
+
+.header-total-time {
+    background-color: beige;
+    flex-grow: 1;
+    flex-shrink: 1;
+
+    padding: 20px;
+}
+
+.tile-heading {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.tile-subtitle {
+    font-size: 48px;
+    font-weight: 700;
+    position: relative;
+    bottom: -100px;
+}
+
+.header-current-course-progress {
+    background-color: blue;
+    flex-grow: 1;
+    flex-shrink: 1;
+
+    padding: 20px;
+}
+
+.header-total-course-progress {
+    background-color: brown;
+    flex-grow: 1;
+    flex-shrink: 1;
+
+    padding: 20px;
+}
+
+.header-profile-tile:hover,
+.header-total-time:hover,
+.header-current-course-progress:hover,
+.header-total-course-progress:hover {
+    width: 100%;
+    cursor: pointer;
+}
+
+.main-content-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.main-top,
+.main-bottom {
+    display: flex;
+    height: 100%;
+}
+
+.main-overview,
+.main-my-courses,
+.main-learning-time,
+.main-performance {
+    /* height: 150px; */
+    width: 50%;
+    transition: width .6s;
+    flex-grow: 1;
+}
+
+.main-overview {
+    background-color: yellowgreen;
+}
+
+.main-my-courses {
+    background-color: tomato;
+}
+
+.main-learning-time {
+    background-color: wheat;
+}
+
+.main-performance {
+    background-color: chartreuse;
+}
+
+.main-overview:hover,
+.main-my-courses:hover,
+.main-learning-time:hover,
+.main-performance:hover {
+    width: 65%;
+}
+
+/* Responsive */
