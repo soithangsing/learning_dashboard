@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multiple Dropdowns Example</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: rgb(37, 37, 37);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    width: 60%;
+    margin: 0 auto;
+}
+
+.dropdown-container {
+    background-color: #333;
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    color: white;
+}
+
+.dropdown-title {
+    font-size: 20px;
+}
+
+.dropdown-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease;
+    background-color: #444;
+    padding: 0 10px;
+    border-radius: 0 0 5px 5px;
+}
+
+.dropdown-container.active .dropdown-content {
+    max-height: 200px; /* Adjust as needed */
+}
+
+.dropdown-content p {
+    margin: 10px 0;
+    color: white;
+}
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="dropdown-container">
+            <div class="dropdown-title">Dropdown 1</div>
+            <div class="dropdown-content">
+                <p>Content for dropdown 1.</p>
+                <p>Additional information...</p>
+            </div>
+        </div>
+
+        <div class="dropdown-container">
+            <div class="dropdown-title">Dropdown 2</div>
+            <div class="dropdown-content">
+                <p>Content for dropdown 2.</p>
+                <p>Additional information...</p>
+            </div>
+        </div>
+
+        <div class="dropdown-container">
+            <div class="dropdown-title">Dropdown 3</div>
+            <div class="dropdown-content">
+                <p>Content for dropdown 3.</p>
+                <p>Additional information...</p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.querySelectorAll(".dropdown-container").forEach(container => {
+    container.addEventListener("click", function () {
+        this.classList.toggle("active");
+    });
+});
+
+    </script>
+</body>
+</html>
