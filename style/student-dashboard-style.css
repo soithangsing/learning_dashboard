@@ -88,11 +88,11 @@ body {
 }
 
 .header-profile-tile img {
-    position: relative;
+    /* position: relative; */
     bottom: 8px;
-    width: 250px
+    max-width: 250px;
+    height: auto;
 }
-
 
 .header-total-time {
     background-color: beige;
@@ -100,6 +100,10 @@ body {
     flex-shrink: 1;
 
     padding: 20px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .tile-heading {
@@ -110,8 +114,8 @@ body {
 .tile-subtitle {
     font-size: 48px;
     font-weight: 700;
-    position: relative;
-    bottom: -100px;
+    /* position: relative; */
+    /* bottom: -100px; */
 }
 
 .header-current-course-progress {
@@ -120,6 +124,9 @@ body {
     flex-shrink: 1;
 
     padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .header-total-course-progress {
@@ -128,6 +135,9 @@ body {
     flex-shrink: 1;
 
     padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .header-profile-tile:hover,
