@@ -18,15 +18,22 @@ body {
     overflow-x: hidden;
     padding-top: 20px;
     padding-bottom: 20px;
+    color: white;
+    font-size: 20px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content:space-between;
     position: fixed;
 }
 
 .left-sidenav a {
     text-decoration: none;
-    cursor: pointer;
+    color: white !important;
+}
+
+.center-left-sidenav {
+    display: flex;
+    flex-direction: column;
 }
 
 a {
@@ -34,10 +41,7 @@ a {
     text-decoration: none;
 }
 
-.center-left-sidenav {
-    display: flex;
-    flex-direction: column;
-}
+
 
 .cards {
     /* border: 2px solid black; */
