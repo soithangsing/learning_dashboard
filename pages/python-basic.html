@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   
+    <link rel="stylesheet" href="../style/python-basic.css">
+</head>
+
+<body>
+    <div class="left-sidenav">
+        <div class="top-left-sidenav">
+            <a href="#">Logo Branding</a>
+        </div>
+        <div class="center-left-sidenav">
+            <a href="./student-dashboard.html">Dashboard</a>
+            <a href="./learning-path.html">Courses</a>
+        </div>
+        <div class="footer-left-sidenav">
+            <a href="login.html">Sign Out</a>
+            <div>
+                <a href="#">Upgrade Now</a>
+            </div>
+        </div>
+    </div>
+    <main>
+        <div class="cards">
+            <div class="heading">
+                Python-basics
+            </div>
+            <p>
+                Overview - <br>
+                This is where it all begins! A hands-on introduction to all of the essential tools you'll need to build
+                real, working websites. You'll learn what web developers actually do – the foundations you'll need for
+                later courses.
+            </p>
+
+            <div class="dropdown-container">
+                <div class="dropdown-title">
+                    <h1>
+                        Introduction ↓
+                    </h1><br>
+                </div>
+                <div class="dropdown-content">
+                    <p>
+                        Python is a high-level, interpreted, general-purpose programming language.<br>
+                        It has a clean and simple syntax, and it's easy to learn.
+                    </p><br>
+                    <p>
+                        <a href="#"><i class="fa fa-envelope icon"></i> - How This Course Will Work</a><br>
+                        <a href="#">- Introduction to Web Development</a><br>
+                        <a href="#">- Motivation and Mindset</a><br>
+                        <a href="#">- Asking For Help</a>
+                    </p>
+                </div>
+            </div>
+
+            <div class="dropdown-container">
+                <div class="dropdown-title">
+                    <h1>
+                        Prerequisities 
+                    </h1><br>
+                </div>
+                <div class="dropdown-content">
+                    
+                    <p>
+                        <a href="#"><i class="fas fa-book"></i> - Computer basics</a><br>
+                        <a href="#">- Introduction to Web Development</a><br>
+                        <a href="#">- Motivation and Mindset</a><br>
+                        <a href="#">- Asking For Help</a>
+                    </p>
+                </div>
+            </div>
+            
+            <div class="dropdown-container">
+                <div class="dropdown-title">
+                    <h1>
+                        Git basics
+                    </h1><br>
+                </div>
+                <div class="dropdown-content">
+                    
+                    <p>
+                        <a href="#"><i class="fas fa-book"></i> - Computer basics</a><br>
+                        <a href="#">- Introduction to Web Development</a><br>
+                        <a href="#">- Motivation and Mindset</a><br>
+                        <a href="#">- Asking For Help</a>
+                    </p>
+                </div>
+            </div>
+
+            <div class="dropdown-container">
+                <div class="dropdown-title">
+                    <h1>
+                        Html basics
+                    </h1><br>
+                </div>
+                <div class="dropdown-content">
+                    
+                    <p>
+                        <a href="#"><i class="fas fa-book"></i> - Computer basics</a><br>
+                        <a href="#">- Introduction to Web Development</a><br>
+                        <a href="#">- Motivation and Mindset</a><br>
+                        <a href="#">- Asking For Help</a>
+                    </p>
+                </div>
+            </div>
+            
+        </div>
+    </main>
+
+    <script>
+        document.querySelectorAll(".dropdown-title").forEach(title => {
+            title.addEventListener("click", function () {
+                this.parentElement.classList.toggle("active");
+            });
+        });
+    </script>
+</body>
+</html>
