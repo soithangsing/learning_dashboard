@@ -4,6 +4,9 @@ body {
     box-sizing: border-box;
     font-family: ubuntu;
     background: linear-gradient(135deg, #7F00FF, #E100FF);
+    /* background-image: url(BG3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover; */
     height: 100vh;
     display: flex;
     justify-content: center;
@@ -19,6 +22,9 @@ body {
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
     overflow: hidden;
     display: flex;
+    background-image: url(BG2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .login-box {
@@ -28,12 +34,15 @@ body {
 }
 
 .login-image {
-    background-color: #F0F0F0;
+    /* background-color: #F0F0F0; */
     display: flex;
     justify-content: center;
     align-items: center;
     width: 50%;
     padding: 40px;
+    /* background-image: url(BG2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover; */
 }
 
 .login-image img {
