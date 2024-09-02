@@ -66,6 +66,9 @@ body {
 
 .header-profile-tile img {
     z-index: 0;
+    position: relative;
+    left: -40px;
+    top:15px;
 }
 .main-overview{
     z-index: 1;
