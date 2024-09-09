@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Student Dashboard</title>
     <link rel="stylesheet" href="../style/student-dashboard-style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -33,7 +34,16 @@
     <div class="main-content-container">
         <div class="header">
             <div class="header-profile-tile">
-                <p>30/08/2024</p>
+                <p>
+                    <script>
+                        function updateTime() {
+                            const date = new Date();
+                            document.querySelector('p').textContent = date.toLocaleString();
+                        }
+
+                        setInterval(updateTime, 1000);
+                    </script>
+                </p>
                 <img src="../assets/img/profile-picture.png" alt="">
                 <h3 style="color:white;">Hello Krafters</h3>
             </div>
